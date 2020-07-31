@@ -8,7 +8,15 @@ Simple boilerplate SCSS framework to help write media queries in scss
 2. Include in your main scss file by @import "scss-responsive-helper";
 
 ## Usage
-#### - Mixins
+#### - Common functions
+
+1. font-face: Initialize font-family, font-size, font-weight, font-style and color
+2. positioning - Align left, right, top, bottom or center
+3. center-block - Align a block element at the center
+4. background-gradient - Apply a background gradient by specifying the start color, end color and orientation
+5. ellipsis - Truncate a text and show ellipsis
+
+#### - Responsiveness
 
 1.  for-phone-only: < 600px
 2.  for-tablet-portrait-up: >=600px
@@ -81,3 +89,7 @@ will transform to
 ## Contributing
 
 Pull requests and feature requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](https://github.com/sagnikpaul28/scss-responsive-helper/blob/master/License)
