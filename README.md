@@ -30,6 +30,12 @@ Simple boilerplate SCSS framework
 10. width-more-than($size): >=$size
 11. width-in-between($minSize, $maxSize): <=$minSize and >=$maxSize
 
+#### - Common Shapes
+
+1. Square
+2. Cirlces
+3. Triangles
+
 ## Examples
 
 ```scss
