@@ -1,6 +1,6 @@
 {
   "name": "scss-responsive-helper",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple boilerplate scss framework to help write media queries in scss",
   "keywords": [
     "css",
@@ -13,7 +13,6 @@
   "main": "./scss/index.scss",
   "style": "./scss/index.scss",
   "scripts": {
-    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -26,6 +25,5 @@
   },
   "homepage": "https://github.com/sagnikpaul28/scss-responsive-helper#readme",
   "dependencies": {
-    "node-sass": "^4.14.1"
   }
 }

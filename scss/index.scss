@@ -4,14 +4,26 @@
 @mixin for-tablet-portrait-up {
     @media screen and (min-width: 600px) { @content; }
 }
+@mixin for-tablet-portrait-down {
+    @media screen and (max-width: 599px) { @content; }
+}
 @mixin for-tablet-landscape-up {
     @media screen and (min-width: 768px) { @content; }
+}
+@mixin for-tablet-landscape-down {
+    @media screen and (max-width: 767px) { @content; }
 }
 @mixin for-desktop-up {
     @media screen and (min-width: 992px) { @content; }
 }
+@mixin for-desktop-down {
+    @media screen and (max-width: 991px) { @content; }
+}
 @mixin for-big-desktop-up {
     @media screen and (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-down {
+    @media screen and (max-width: 1199px) { @content; }
 }
 @mixin width-less-than($size) {
     @media screen and (max-width: $size) { @content; }
