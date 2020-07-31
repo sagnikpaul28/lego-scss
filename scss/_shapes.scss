@@ -1,0 +1,70 @@
+@mixin arrow-up($size1, $size2, $direction, $color) {
+    border-left: $size1 solid transparent;
+    border-right: $size1 solid transparent;
+    border-bottom: $size2 solid $color;
+}
+
+@mixin arrow-down($size1, $size2, $direction, $color) {
+    border-left: $size1 solid transparent;
+    border-right: $size1 solid transparent;
+    border-top: $size2 solid $color;
+}
+
+@mixin arrow-right($size1, $size2, $direction, $color) {
+    border-top: $size1 solid transparent;
+    border-bottom: $size1 solid transparent;
+    border-left: $size2 solid $color;
+}
+
+@mixin arrow-left($size1, $size2, $direction, $color) {
+    border-top: $size1 solid transparent;
+    border-bottom: $size1 solid transparent;
+    border-right: $size2 solid $color;
+}
+
+@mixin scss-triangle($size1, $size2, $direction, $color) {
+    width: 0;
+    height: 0;
+    content: "";
+
+    @if $direction == up {
+        @include arrow-up($size1, $size2, $direction, $color);
+    }
+    @if $direction == down {
+        @include arrow-down($size1, $size2, $direction, $color);
+    }
+    @if $direction == right {
+        @include arrow-right($size1, $size2, $direction, $color);
+    }
+    @if  $direction == left {
+        @include arrow-left($size1, $size2, $direction, $color);
+    }
+    @if $direction == top-right {
+        @include arrow-up($size1, $size2, $direction, $color);
+        transform: rotate(45deg);
+    }
+    @if $direction == down-right {
+        @include arrow-right($size1, $size2, $direction, $color);
+        transform: rotate(45deg);
+    }
+    @if $direction == top-left {
+        @include arrow-left($size1, $size2, $direction, $color);
+        transform: rotate(45deg);
+    }
+    @if  $direction == down-left {
+        @include arrow-down($size1, $size2, $direction, $color);
+        transform: rotate(45deg);
+    }
+}
+
+@mixin scss-square($size, $color) {
+    width: 0;
+    height: 0;
+    content: "";
+    border: $size solid $color;
+}
+
+@mixin scss-circle($size, $color) {
+    @include scss-square($size, $color);
+    border-radius: 50%;
+}
