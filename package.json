@@ -1,0 +1,30 @@
+{
+  "name": "scss-responsive-helper",
+  "version": "1.0.0",
+  "description": "Simple boilerplate scss framework to help write media queries in scss",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "responsive",
+    "rwd",
+    "responsive-scss"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagnikpaul28/scss-responsive-helper.git"
+  },
+  "author": "Sagnik Paul",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagnikpaul28/scss-responsive-helper/issues"
+  },
+  "homepage": "https://github.com/sagnikpaul28/scss-responsive-helper#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
