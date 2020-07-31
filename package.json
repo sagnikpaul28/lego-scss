@@ -1,6 +1,6 @@
 {
   "name": "scss-responsive-helper",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Simple boilerplate scss framework to help write media queries in scss",
   "keywords": [
     "css",
@@ -10,9 +10,10 @@
     "rwd",
     "responsive-scss"
   ],
-  "main": "index.js",
+  "main": "./scss/index.scss",
+  "style": "./scss/index.scss",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
