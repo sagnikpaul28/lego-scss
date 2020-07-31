@@ -1,7 +1,7 @@
 {
-  "name": "scss-responsive-helper",
-  "version": "1.0.6",
-  "description": "Simple boilerplate scss framework to help write media queries in scss",
+  "name": "lego-scss",
+  "version": "1.0.2",
+  "description": "Building blocks for your scss code - Basic functions to increase reusability of code",
   "keywords": [
     "css",
     "scss",
@@ -16,14 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sagnikpaul28/scss-responsive-helper.git"
+    "url": "git+https://github.com/sagnikpaul28/lego-scss.git"
   },
   "author": "Sagnik Paul",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sagnikpaul28/scss-responsive-helper/issues"
+    "url": "https://github.com/sagnikpaul28/lego-scss/issues"
   },
-  "homepage": "https://github.com/sagnikpaul28/scss-responsive-helper#readme",
-  "dependencies": {
-  }
+  "homepage": "https://github.com/sagnikpaul28/lego-scss#readme"
 }

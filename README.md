@@ -1,6 +1,6 @@
-# scss-responsive-helper
+# scss-util
 
-Simple boilerplate SCSS framework to help write media queries in scss
+Simple boilerplate SCSS framework
 
 ## Installation
 
