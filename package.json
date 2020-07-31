@@ -1,6 +1,6 @@
 {
   "name": "scss-responsive-helper",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Simple boilerplate scss framework to help write media queries in scss",
   "keywords": [
     "css",

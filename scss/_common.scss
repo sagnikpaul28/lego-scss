@@ -1,0 +1,60 @@
+@mixin font-face($font-name: inherit, $font-size: 1rem, $weight: normal, $style: normal, $color: inherit) {
+    font-family: $font-name;
+    font-size: $font-size;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;
+}
+
+@mixin positioning($horizontal, $vertical) {
+    position: absolute;
+
+    @if $vertical == center {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }@else if $vertical == top {
+        top: 0;
+    }@else if $vertical == bottom {
+        bottom: 0;
+    }
+
+    @if $horizontal == center {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }@else if $horizontal == left {
+        left: 0;
+    }@else if $horizontal == right {
+        right: 0;
+    }
+}
+
+@mixin center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin background-gradient($start-color, $end-color, $orientation) { 
+    background: $start-color;
+
+    @if $orientation == 'vertical' {
+      background: -webkit-linear-gradient(top, $start-color, $end-color);
+      background: linear-gradient(to bottom, $start-color, $end-color);
+    } @else if $orientation == 'horizontal' {
+      background: -webkit-linear-gradient(left, $start-color, $end-color);
+      background: linear-gradient(to right, $start-color, $end-color);
+    } @else {
+      background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+      background: radial-gradient(ellipse at center, $start-color, $end-color);
+    }
+}
+
+@mixin ellipsis($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
