@@ -1,6 +1,6 @@
 {
   "name": "lego-scss",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Building blocks for your scss code - Basic functions to increase reusability of code",
   "keywords": [
     "css",

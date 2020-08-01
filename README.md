@@ -1,6 +1,6 @@
-# scss-util
+# lego-scss
 
-Simple boilerplate SCSS framework
+Building blocks for your scss code - Basic functions to increase reusability of code
 
 ## Installation
 
