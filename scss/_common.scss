@@ -1,4 +1,4 @@
-@mixin font-face($font-name: inherit, $font-size: 1rem, $weight: normal, $style: normal, $color: inherit) {
+@mixin font-face($font-size: inherit, $color: inherit, $weight: inherit, $font-name: inherit, $style: inherit) {
     font-family: $font-name;
     font-size: $font-size;
     font-weight: $weight;
