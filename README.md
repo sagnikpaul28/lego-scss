@@ -4,17 +4,44 @@ Building blocks for your scss code - Basic functions to increase reusability of 
 
 ## Installation
 
-1. Run npm install scss-responsive-helper
-2. Include in your main scss file by @import "scss-responsive-helper";
+1. Run npm install lego-scss
+2. Include in your main scss file by @import "lego-scss";
 
 ## Usage
 #### - Common functions
 
-1. font-face: Initialize font-family, font-size, font-weight, font-style and color
+1. font-face: Initialize font-family, font-size, font-weight, font-style and color 
+    
+```scss
+@include font-face(font-size, color, font-weight, font-style, font-family)
+```
+All params are optional. If null is sent for any variable, it will fall back to "inherit"
+
 2. positioning - Align left, right, top, bottom or center
+
+```scss
+@include positioning(left/right/center, top/center/bottom)
+  ```
+
 3. center-block - Align a block element at the center
+
+```scss
+@include center-block
+```
+Allow centering of a block element
+
 4. background-gradient - Apply a background gradient by specifying the start color, end color and orientation
+
+```scss
+@include background-gradient(start-color, end-color, horizontal/vertical)
+```
+
 5. ellipsis - Truncate a text and show ellipsis
+
+```scss
+@include ellipsis(max-width)
+```
+
 
 #### - Responsiveness
 
@@ -33,8 +60,24 @@ Building blocks for your scss code - Basic functions to increase reusability of 
 #### - Common Shapes
 
 1. Square
+
+```scss
+@include scss-square(size, color)
+```
+
 2. Cirlces
+
+```scss
+@include scss-circle(size, color)
+```
+
 3. Triangles
+
+```scss
+@include scss-triangle(size1, size2, direction, color)
+```
+The direction which the triangle is pointing can be - up/bottom/left/right/top-left/top-right/bottom-left/bottom-right
+
 
 ## Examples
 
