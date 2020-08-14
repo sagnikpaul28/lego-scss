@@ -1,9 +1,17 @@
 @mixin font-face($font-size: inherit, $color: inherit, $weight: inherit, $style: inherit, $font-name: inherit) {
-    font-family: $font-name;
     font-size: $font-size;
-    font-weight: $weight;
-    font-style: $style;
-    color: $color;
+    @if $color != inherit {
+        color: $color;
+    }
+    @if $weight != inherit {
+        font-weight: $weight;
+    }
+    @if $style != inherit {
+        font-style: $style;
+    }
+    @if $font-name != inherit {
+        font-family: $font-name;
+    }
 }
 
 @mixin positioning($horizontal, $vertical) {
