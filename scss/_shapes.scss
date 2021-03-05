@@ -26,26 +26,26 @@
     @if $direction == top-right {
         border-bottom: $size2 solid transparent;
         border-left: $size1 solid transparent;
-        border-top: $size2 solid rgba(var(--color_35), 1);
-        border-right: $size1 solid rgba(var(--color_35), 1);
+        border-top: $size2 solid $color;
+        border-right: $size1 solid $color;
     }
     @if $direction == down-right {
         border-top: $size2 solid transparent;
         border-left: $size1 solid transparent;
-        border-bottom: $size2 solid rgba(var(--color_35), 1);
-        border-right: $size1 solid rgba(var(--color_35), 1);
+        border-bottom: $size2 solid $color;
+        border-right: $size1 solid $color;
     }
     @if $direction == top-left {
         border-bottom: $size2 solid transparent;
         border-right: $size1 solid transparent;
-        border-top: $size2 solid rgba(var(--color_35), 1);
-        border-left: $size1 solid rgba(var(--color_35), 1);
+        border-top: $size2 solid $color;
+        border-left: $size1 solid $color;
     }
     @if  $direction == down-left {
         border-top: $size2 solid transparent;
         border-right: $size1 solid transparent;
-        border-bottom: $size2 solid rgba(var(--color_35), 1);
-        border-left: $size1 solid rgba(var(--color_35), 1);
+        border-bottom: $size2 solid $color;
+        border-left: $size1 solid $color;
     }
 }
 
